@@ -1,10 +1,9 @@
-gee.js is not being maintained.
+golly.js (gee.js)
 ===============================
 
-Totally deprecated. I recommend [paper.js](http://paperjs.org) instead. I'll be keeping this page around because I think the documentation is cool. - george
+This is is a library that makes it quick to start sketching with the HTML5 canvas element.
 
-**gee.js** is is a library that makes it quick to start sketching with the HTML5 canvas element.
+Check the [index page](http://dannyx0.github.com/gee/) for usage.
 
-Check the [index page](http://georgealways.github.com/gee/) for usage.
-
+Originally, [gee.js](https://github.com/georgealways/gee) (now deprecated).
 Initiated by [George Michael Brower](http://georgemichaelbrower.com/) and [Jono Brandel](http://jonobr1.com/) of the Data Arts Team, Google Creative Lab.
