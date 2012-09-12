@@ -1,4 +1,4 @@
-/*! golly.js - v0.0.1 - 2012-09-11
+/* golly.js : v0.0.1 on 09/11/2012
 * http://dannyx0.github.com/golly/
 * Copyright (c) 2012 Danny Garcia; Licensed MIT */
 
