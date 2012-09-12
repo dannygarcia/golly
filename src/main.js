@@ -277,17 +277,16 @@ window['GOLLY'] = function(params) {
 	}, false);
 
 	// Internal loop.
-
-	var requestAnimationFrame = (function() {
-      return  window.requestAnimationFrame       ||
-              window.webkitRequestAnimationFrame ||
-              window.mozRequestAnimationFrame    ||
-              window.oRequestAnimationFrame      ||
-              window.msRequestAnimationFrame     ||
-              function (callback) {
-                window.setTimeout(callback, _actualFrameTime);
-              };
-    }());
+	window.requestAnimationFrame = (function(){
+		return  window.requestAnimationFrame   ||
+			window.webkitRequestAnimationFrame ||
+			window.mozRequestAnimationFrame    ||
+			window.oRequestAnimationFrame      ||
+			window.msRequestAnimationFrame     ||
+			function( callback ){
+				window.setTimeout(callback, 1000 / 60);
+			};
+	}());
 
 	_privateParts['_idraw'] = function() {
 
@@ -306,7 +305,7 @@ window['GOLLY'] = function(params) {
 		}
 
 		if ( _this['loop'] ) {
-			requestAnimationFrame( _privateParts['_idraw'] );
+			window.requestAnimationFrame( _privateParts['_idraw'] );
 		}
 
 	};
