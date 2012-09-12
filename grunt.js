@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 		},
 		concat: {
 			dist: {
-				src: ['<banner:meta.banner>', '<file_strip_banner:src/golly.js>'],
+				src: ['<banner:meta.banner>', '<file_strip_banner:src/main.js>'],
 				dest: 'dist/golly.js'
 			}
 		},

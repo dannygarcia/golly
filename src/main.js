@@ -15,13 +15,14 @@ window['GOLLY'] = function(params) {
 
 	var _this = this,
 		_keysDown = {},
+		k = 1e3,
 		_privateParts =
 		{
 			'ctx' : undefined,
 			'domElement' : undefined,
 			'width' : undefined,
 			'height' : undefined,
-			'desiredFrameTime' : 1E3/60,
+			'desiredFrameTime' : k/60,
 			'frameCount' : 0,
 			'key' : undefined,
 			'keyCode' : undefined,
@@ -208,7 +209,7 @@ window['GOLLY'] = function(params) {
 		_privateParts['desiredFrameTime'] = v;
 	});
 
-	_this.__defineSetter__('frameRate', function(v, k) {
+	_this.__defineSetter__('frameRate', function(v) {
 		_privateParts['desiredFrameTime'] = k/v;
 	});
 
