@@ -179,10 +179,26 @@ function demo(g) {
 			age++;
 		};
 		arr.push(this);
+
+		acc = null;
+		radius = null;
+		yvel = null;
+		xvel = null;
+		x = null;
+		y = null;
+		drag = null;
+		ss = null;
+		r = null;
+		age = null;
+		deathAge = null;
+		deathLength = null;
+		rs = null;
 	};
 
 	var Sign = function(arr, str, x, y, ss) {
+
 		ss = ss || 1;
+
 		var spikeWidth = 8,
 			spikeHeight = 6,
 			boxWidth = 60,
@@ -197,6 +213,7 @@ function demo(g) {
 			xv = g.mouseX - g.pmouseX,
 			yv = g.mouseY - g.pmouseY,
 			deathLength = 3 + parseInt(Math.random()*5, 10);
+
 		xv *= 1.3;
 		yv *= 1.3;
 		this.boxColor = '#fff';
@@ -237,6 +254,7 @@ function demo(g) {
 				s = (deathLength-s)/deathLength;
 				s = Math.sqrt(s);
 				c.scale(s, s);
+				s = null;
 			} else {
 				c.scale(1, 1);
 			}
