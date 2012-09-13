@@ -1,4 +1,4 @@
-/* golly.js : v0.0.1 on 09/11/2012
+/* golly.js : v0.0.1 on 09/12/2012
 * http://dannyx0.github.com/golly/
 * Copyright (c) 2012 Danny Garcia; Licensed MIT */
 
@@ -281,17 +281,16 @@ window['GOLLY'] = function(params) {
 	}, false);
 
 	// Internal loop.
-
-	var requestAnimationFrame = (function() {
-      return  window.requestAnimationFrame       ||
-              window.webkitRequestAnimationFrame ||
-              window.mozRequestAnimationFrame    ||
-              window.oRequestAnimationFrame      ||
-              window.msRequestAnimationFrame     ||
-              function (callback) {
-                window.setTimeout(callback, _actualFrameTime);
-              };
-    }());
+	window.requestAnimationFrame = (function(){
+		return  window.requestAnimationFrame   ||
+			window.webkitRequestAnimationFrame ||
+			window.mozRequestAnimationFrame    ||
+			window.oRequestAnimationFrame      ||
+			window.msRequestAnimationFrame     ||
+			function( callback ){
+				window.setTimeout(callback, 1000 / 60);
+			};
+	}());
 
 	_privateParts['_idraw'] = function() {
 
@@ -310,7 +309,7 @@ window['GOLLY'] = function(params) {
 		}
 
 		if ( _this['loop'] ) {
-			requestAnimationFrame( _privateParts['_idraw'] );
+			window.requestAnimationFrame( _privateParts['_idraw'] );
 		}
 
 	};
