@@ -1,35 +1,35 @@
-* { 
+* {
 margin: 0;
 padding: 0;
 }
 
-body { 
+body {
 color: #333;
 font: 11px/18px Lucida Grande, Arial, sans-serif;
 }
 
-canvas { 
+canvas {
 margin: 20px 0;
-background: #eee url(gee.png) center 47% no-repeat;
+background: #eee url(golly.png) center 47% no-repeat;
 }
 
-#container { 
-width: 515px;
-margin: 0 auto;
+.container {
+    width: 515px;
+    margin: 0 auto;
 }
 
-dt { 
+dt {
 	float: left;
 	width: 110px;
 	clear: both;
 	font-weight: bold;
 }
 
-p, ul, ol { 
+p, ul, ol {
 	font-size: 12px;
 	clear: both;
-	line-height: 20px; 
-	margin-bottom: 24px; 
+	line-height: 20px;
+	margin-bottom: 24px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,18 +38,18 @@ h1, h2, h3, h4, h5, h6 {
     margin: 30px 0;
 }
 
-h2 code { 
+h2 code {
 font-weight: normal;
 font-size: 15px;
 }
 
-dd { 
+dd {
 float: right;
 width: 340px;
 margin-bottom: 15px;
 }
 
-hr { 
+hr {
 height: 1;
 clear: both;
 border: 0;
@@ -57,12 +57,12 @@ background-color: #eee;
 margin: 15px 0 18px 0;
 }
 
-code { 
+code {
 font-family: Monaco, monospace;
 color: #555;
 }
 
-dt:after { 
+dt:after {
 display: block;
 float: right;
 font-weight: normal;
@@ -77,28 +77,28 @@ text-align: center;
 width: 20px;
 }
 
-dt.function:after { 
+dt.function:after {
 content: 'func';
 background-color: #e61d5f;
 }
 
-dt.number:after { 
+dt.number:after {
 content: 'num';
 background-color: #00aeef;
 }
 
-dt.string:after { 
+dt.string:after {
 content: 'str';
 background-color: #1ed36f;
 }
 
-dt.dom:after { 
+dt.dom:after {
 content: 'DOM';
 font-size: 8px;
 background-color: #888;
 }
 
-dt.boolean:after { 
+dt.boolean:after {
 content: 'bool';
 background-color: #54396e;
 }
@@ -109,20 +109,20 @@ color: #666;
 font-style: italic;
 }
 
-dt.readonly { 
+dt.readonly {
 background: url(lock.gif) left center no-repeat;
 padding-left: 30px;
 margin-left: -30px;
 }
 
-footer { 
+footer {
 margin-top: 20px;
 margin-bottom: 30px;
 background-color: #eee;
 width: 510px;
 padding: 10px;
 clear: both;
-color: #444;	
+color: #444;
 }
 
 a:link {
@@ -141,11 +141,11 @@ a:active {
 color: #54396e;
 }
 
-.clear { 
+.clear {
 clear: both;
 }
 
-pre { 
+pre {
     margin: 20px 0 20px 0;
     padding: 15px;
     background-color: #222;
@@ -155,7 +155,7 @@ pre {
 }
 
 
-ol, ul { 
+ol, ul {
 padding-left: 25px;
 }
 
