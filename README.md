@@ -2,7 +2,7 @@
 
 **golly.js** is a library that makes it quick to start sketching with the HTML5 canvas element.
 
-Check the [index page](http://dannyx0.github.com/golly/) for usage.
+Check the [index page](http://dannygarcia.github.com/golly/) for usage.
 
 [gee.js](https://github.com/georgealways/gee), _now deprecated_, was initiated by [George Michael Brower](http://georgemichaelbrower.com/) and [Jono Brandel](http://jonobr1.com/) of the Data Arts Team, Google Creative Lab.
 

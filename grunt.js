@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 			version: '0.0.1',
 			banner: '/* golly.js : v<%= meta.version %> on ' +
 				'<%= grunt.template.today("mm/dd/yyyy") %>\n' +
-				'* http://dannyx0.github.com/golly/\n' +
+				'* http://dannygarcia.github.com/golly/\n' +
 				'* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
 				'Danny Garcia; Licensed MIT */'
 		},

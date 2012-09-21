@@ -1,5 +1,5 @@
 /* golly.js : v0.0.1 on 09/12/2012
-* http://dannyx0.github.com/golly/
+* http://dannygarcia.github.com/golly/
 * Copyright (c) 2012 Danny Garcia; Licensed MIT */
 
 // Base
